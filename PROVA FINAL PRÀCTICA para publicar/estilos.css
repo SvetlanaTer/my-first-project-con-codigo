@@ -1,0 +1,193 @@
+.metal-mania-regular {
+	font-family: "Metal Mania", system-ui;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/*https://www.rockschoolbarcelona.com/*/
+
+figure img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+li {
+	list-style: none;
+}
+
+
+body {
+	display: grid;
+	grid-template-columns: 78% auto;
+	grid-gap: 10px;
+	grid-template-areas:
+		'he he'
+		'na se'
+		'ma ma'
+		'fu fu'
+	;
+	margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		grid-template-columns: auto;
+		grid-template-areas:
+			'he'
+			'na'
+			'se'
+			'ma'
+			'fu'
+		;
+	}
+}
+
+/*HEADER*/
+header {
+	grid-area: he;
+	display: flex;
+	background-color: #000;
+	margin: 1%;
+	border-radius: 20px;
+	align-items: center;
+}
+
+header figure {
+	flex: 1;
+	width: 10%;
+}
+
+header h1 {
+	flex: 25;
+	text-align: center;
+	color: #FFF;
+	font-size: 3vw;
+	font-family: Metal Mania;
+}
+
+/*MENU*/
+nav {
+	grid-area: na;
+	border: 2px solid #000;
+	border-radius: 20px;
+	margin: 1%;
+	margin-top: 0;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul li {
+	list-style: none;
+	font-family: arial;
+	margin: 0;
+	padding-right: 4%;
+	font-size: 1.2vw;
+}
+
+nav ul li a {
+	color: #000;
+}
+
+nav ul li:hover a {
+	color: #ED1C24;
+	font-family: Metal Mania;
+	font-size: 1.4vw;
+}
+
+/*REGISTRO*/
+section {
+	grid-area: se;
+	border: 2px solid #000;
+	border-radius: 20px;
+	margin: 2%;
+	margin-top: 0;
+	margin-right: 5%;
+}
+
+form {
+	margin: 3%;
+}
+
+label {
+	color: #000;
+	display: inline-block;
+	min-width: 90px;
+	font-family: arial;
+}
+
+
+/*MAIN*/
+main {
+	grid-area: ma;
+}
+
+h2 {
+	font-family: Metal Mania;
+	font-size: 3.5vw;
+	margin-left: 3%;
+	margin-top: 1%;
+}
+
+h3 {
+	font-family: Metal Mania;
+	font-size: 2.5vw;
+	margin-left: 3%;
+	margin-top: 5%;
+}
+
+p {
+	font-family: arial;
+}
+
+/*FOOTER*/
+footer {
+	grid-area: fu;
+	display: flex;
+	background-color: #000;
+	border-radius: 20px;
+	margin: 1%;
+	align-items: center;
+}
+
+footer figure {
+	flex: 1;
+}
+
+footer ul {
+	flex: 25;
+	display: flex;
+	justify-content: center;
+}
+
+footer ul li {
+	list-style: none;
+	font-family: arial;
+	margin: 0;
+	padding-right: 4%;
+	font-size: 1.2vw;
+}
+
+footer ul li a {
+	color: #FFF;
+}
+
+footer ul li:hover a {
+	color: #ED1C24;
+	font-family: Metal Mania;
+	font-size: 1.4vw;
+}
+
+footer p {
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-right: 30px;
+}
